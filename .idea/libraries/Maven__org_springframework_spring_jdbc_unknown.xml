@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework:spring-jdbc:unknown">
+    <CLASSES>
+      <root url="jar://D:/Java/apache-maven-3.3.9/repository/org/springframework/spring-jdbc/unknown/spring-jdbc-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Java/apache-maven-3.3.9/repository/org/springframework/spring-jdbc/unknown/spring-jdbc-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Java/apache-maven-3.3.9/repository/org/springframework/spring-jdbc/unknown/spring-jdbc-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
