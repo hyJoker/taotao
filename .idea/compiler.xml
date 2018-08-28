@@ -11,6 +11,7 @@
         <module name="taotao-manager-interface" />
         <module name="taotao-manager-pojo" />
         <module name="taotao-manager-service" />
+        <module name="taotao-manager-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
