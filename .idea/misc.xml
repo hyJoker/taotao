@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-manager/taotao-manager-service" />
-    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-manager/taotao-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -15,6 +15,8 @@
         <option value="$PROJECT_DIR$/taotao-manager-interface/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-manager-pojo/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-manager-service/pom.xml" />
+        <option value="$PROJECT_DIR$/taotao-parent/taotao-manager/taotao-manager-service/pom.xml" />
+        <option value="$PROJECT_DIR$/taotao-parent/taotao-manager/pom.xml" />
       </list>
     </option>
   </component>

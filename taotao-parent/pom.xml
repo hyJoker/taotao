@@ -8,11 +8,6 @@
     <artifactId>taotao-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <modules>
-        <module>taotao-manager</module>
-        <module>taotao-common</module>
-    </modules>
-
     <!-- 父pom文件 负责组件的版本管理 -->
     <packaging>pom</packaging>
 
