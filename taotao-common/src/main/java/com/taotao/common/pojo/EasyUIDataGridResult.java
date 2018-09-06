@@ -1,7 +1,5 @@
 package com.taotao.common.pojo;
 
-import com.taotao.pojo.TbItem;
-
 import java.io.Serializable;
 import java.util.List;
 
