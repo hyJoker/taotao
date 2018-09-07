@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+    <!--管理redis客户端的配置文件-->
+
+    <!-- 开启注解 测试时使用 开启注解的配置是为了在测试类中测试代码而添加的，因为使用测试类测试的话，
+    不会加载其它配置文件，因此没有开启注解，因此需要这句配置，测试完后记得要删掉这个配置-->
+    <!--<context:annotation-config/>-->
+
+    <!-- redis单机版 -->
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg name="host" value="192.168.119.138"/>
+        <constructor-arg name="port" value="6379"/>
+    </bean>
+
+    <bean id="jedisClientPool" class="com.taotao.jedis.service.impl.JedisClientPool"></bean>
+
+    <!-- redis集群版 -->
+    <!--<bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">-->
+        <!--<constructor-arg>-->
+            <!--<set>-->
+                <!--<bean class="redis.clients.jedis.HostAndPort">-->
+                    <!--<constructor-arg name="host" value="192.168.156.15"/>-->
+                    <!--<constructor-arg name="port" value="6379"/>-->
+                <!--</bean>-->
+                <!--<bean class="redis.clients.jedis.HostAndPort">-->
+                    <!--<constructor-arg name="host" value="192.168.156.16"/>-->
+                    <!--<constructor-arg name="port" value="6379"/>-->
+                <!--</bean>-->
+                <!--<bean class="redis.clients.jedis.HostAndPort">-->
+                    <!--<constructor-arg name="host" value="192.168.156.17"/>-->
+                    <!--<constructor-arg name="port" value="6379"/>-->
+                <!--</bean>-->
+                <!--<bean class="redis.clients.jedis.HostAndPort">-->
+                    <!--<constructor-arg name="host" value="192.168.156.18"/>-->
+                    <!--<constructor-arg name="port" value="6379"/>-->
+                <!--</bean>-->
+                <!--<bean class="redis.clients.jedis.HostAndPort">-->
+                    <!--<constructor-arg name="host" value="192.168.156.19"/>-->
+                    <!--<constructor-arg name="port" value="6379"/>-->
+                <!--</bean>-->
+                <!--<bean class="redis.clients.jedis.HostAndPort">-->
+                    <!--<constructor-arg name="host" value="192.168.156.20"/>-->
+                    <!--<constructor-arg name="port" value="6379"/>-->
+                <!--</bean>-->
+            <!--</set>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
+    <!--<bean id="jedisClientCluster" class="com.taotao.jedis.service.impl.JedisClientCluster"></bean>-->
+</beans>

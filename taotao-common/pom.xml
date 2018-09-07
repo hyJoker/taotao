@@ -27,6 +27,11 @@
     </properties>
 
     <dependencies>
+        <!--fastJSON相关包-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
         <!-- 时间操作组件 -->
         <dependency>
             <groupId>joda-time</groupId>
