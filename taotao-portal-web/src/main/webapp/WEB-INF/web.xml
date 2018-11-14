@@ -6,6 +6,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <display-name>taotao-portal-web</display-name>
+    <!-- 默认访问页 -->
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>

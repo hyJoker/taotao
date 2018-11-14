@@ -2,12 +2,14 @@ package com.taotao.jedis.service.impl;
 
 import com.taotao.jedis.service.JedisClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 import java.util.logging.FileHandler;
 
 //单机版jedis客户端
+@Service
 public class JedisClientPool implements JedisClient {
 
     @Autowired

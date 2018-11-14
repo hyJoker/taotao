@@ -5,6 +5,7 @@
         <artifactId>taotao-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <groupId>com.taotao</groupId>
     <artifactId>taotao-portal-web</artifactId>
     <version>1.0-SNAPSHOT</version>

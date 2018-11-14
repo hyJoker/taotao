@@ -31,6 +31,7 @@ public class TestJedis {
         //从连接池中获取连接
         Jedis jedis = jedisPool.getResource();
         //使用jedis操作数据库(方法级别,就是说只在该方法中使用,用完就关闭)
+        jedis.set("jedis-key", "111");
         String result = jedis.get("jedis-key");
         System.out.println(result);
         //关闭jedis
