@@ -9,6 +9,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.io.UnsupportedEncodingException;
+
 @Controller
 public class SearchController {
 
@@ -19,10 +21,11 @@ public class SearchController {
     private Integer SEARCH_RESULT_ROWS;
 
     @RequestMapping("/search")
-    public String search(@RequestParam("q") String queryString, @RequestParam(defaultValue = "1") Integer page, Model model){
+    public String search(@RequestParam("q") String queryString, @RequestParam(defaultValue = "1") Integer page, Model model) throws Exception {
+        //int aa = 1 / 0;
         try {
             //解决乱码问题
-            queryString=new String(queryString.getBytes("iso8859-1"),"utf-8");
+            queryString = new String(queryString.getBytes("iso8859-1"), "utf-8");
             //调用服务执行查询
             SearchResult searchResult = searchService.search(queryString, page, SEARCH_RESULT_ROWS);
             //把结果传递给页面
@@ -30,7 +33,7 @@ public class SearchController {
             model.addAttribute("totalPages", searchResult.getTotalPages());
             model.addAttribute("itemList", searchResult.getItemList());
             model.addAttribute("page", page);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         //返回逻辑视图

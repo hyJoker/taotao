@@ -12,6 +12,12 @@
     <packaging>war</packaging>
 
     <dependencies>
+        <!-- JMail组件 -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+        </dependency>
+
         <!-- 依赖taotao-common -->
         <dependency>
             <groupId>com.taotao</groupId>
