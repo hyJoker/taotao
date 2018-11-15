@@ -13,6 +13,12 @@
     <packaging>war</packaging>
 
     <dependencies>
+        <!-- activemq组件 -->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
