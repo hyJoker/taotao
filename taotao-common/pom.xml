@@ -27,6 +27,13 @@
     </properties>
 
     <dependencies>
+        <!-- servlet-api组件 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <!--编译和测试时使用-->
+            <scope>provided</scope>
+        </dependency>
         <!--fastJSON相关包-->
         <dependency>
             <groupId>com.alibaba</groupId>
