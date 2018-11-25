@@ -22,4 +22,7 @@
     <dubbo:protocol name="dubbo" port="20884" />
     <!--声明要暴露的服务接口-->
     <!--<dubbo:service interface="com.taotao.service.ItemService" ref="itemServiceImpl" timeout="300000"/>-->
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="com.taotao.order.service.OrderService" ref="orderServiceImpl" timeout="300000"/>
+
 </beans>
